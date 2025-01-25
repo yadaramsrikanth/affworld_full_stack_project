@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+<=> Project Description: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  This is a task management website where users can register, log in, and manage tasks. The application provides a simple interface for users to add, delete, and update the status of tasks. Users can also manage photos by adding images and captions. The system stores authentication tokens securely in cookies, ensuring that only logged-in users can access the home section. The app also handles redirecting users when they try to access restricted routes. The drag-and-drop feature for task status updates is powered by the react-beautiful-dnd package.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+<=> Features implemented:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1.User Registration and Login: Users can register with a name, email, and password. After registration, they can log in with their credentials.
+2.Password Recovery: If a user forgets their password, they can use the "Forgot Password" feature to recover their account.
+3.Task Management:
+  A. Users can add new tasks with a name and description, which will appear in the "Pending" column.
+  B.Tasks can be deleted via a confirmation pop-up when the delete button is clicked.
+  C.Tasks can be moved between columns (Pending, Completed, Done) via drag-and-drop, with updates reflected in the database..4.
+4.Photo Section: Users can add images and captions, which will be displayed on the screen.
+5.JWT Authentication: JWT tokens are stored in cookies for session management.
+6.Route Protection: Users who are not logged in will be redirected to the login page when trying to access the home section. Logged-in users will be redirected to the home page if they try to access the login page.
+7.Not Found Page: If an invalid URL is entered, a "Not Found" page is displayed with a button to redirect users to the home section.
+8.Drag-and-Drop Functionality: The task status is updated via drag-and-drop functionality, implemented using the react-beautiful-dnd package.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<=>Steps to run the project:  
+1.Clone the Repository.[clone repository url]
+2.Navigate to the Project Directory.[cd directory_name]
+3.Install Dependencies.[npm install]
+4.Start the Development Server.[npm start]
 
-### `npm run build`
+<=>NOTE<=>:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The backend of this project is deployed on Render, and I am using a free Redis instance for data storage. Please note that free Redis instances are not backed by persistent disk storage, which means that whenever the instance restarts, all data stored in Redis is lost. As a result, any data added or stored during development might not persist after a restart.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
