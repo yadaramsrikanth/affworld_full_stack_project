@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import { useNavigate,Navigate } from "react-router-dom"
+import { useNavigate,Navigate,Link } from "react-router-dom"
 import Cookies from "js-cookie"
 import "./index.css"
 
@@ -74,10 +74,10 @@ const     onClickLogin=async (event)=>{
             <input value={email} type="email" required placeholder="Enter Email..." onChange={Loginwithuseremail}/>
             <label>Password</label>
             <input value={password} required type="password" placeholder="Enter Password..." onChange={loginwithuserpassword}/>
-            <p className="msg-para"><a  className="login-link" href="/forgotpassword">Forgot Password</a></p>
+            <p className="msg-para"><Link  className="login-link" to="/forgotpassword">Forgot Password</Link></p>
             <button type="submit" className="register-submit-button">Login</button>
             {Errormsg!=="" &&<p className="error-message">{Errormsg}</p>}
-           <p className="msg-para">Don't have an account? <a className="login-link" href="/register">Register</a></p>
+           <p className="msg-para">Don't have an account? <Link className="login-link" to="/register">Register</Link></p>
             </form>
             
             

@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-
+import {Link} from "react-router-dom"
 
 import "./index.css"
 
@@ -69,7 +69,7 @@ const     onClickLogin=async (event)=>{
             <button type="submit" className="register-submit-button">Reset Password</button>
             {Errormsg!=="" &&<p className="error-message">{Errormsg}</p>}
             {successmsg!==""&&<p className="error-message">{successmsg}</p>}
-           <p className="msg-para">{`<`} <a className="login-link" href="/login">Back to login</a></p>
+           <p className="msg-para">{`<`} <Link className="login-link" href="/login">Back to login</Link></p>
             </form>
             
             
