@@ -69,7 +69,7 @@ const     onClickLogin=async (event)=>{
             <button type="submit" className="register-submit-button">Reset Password</button>
             {Errormsg!=="" &&<p className="error-message">{Errormsg}</p>}
             {successmsg!==""&&<p className="error-message">{successmsg}</p>}
-           <p className="msg-para">{`<`} <Link className="login-link" href="/login">Back to login</Link></p>
+           <p className="msg-para">{`<`} <Link className="login-link" to="/login">Back to login</Link></p>
             </form>
             
             
