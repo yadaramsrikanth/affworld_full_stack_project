@@ -1,0 +1,75 @@
+.feed-section-container{
+    font-family: "Roboto";
+    font-size: 28px;
+    font-weight: bold;
+    color: cornflowerblue;
+    margin: 50px 10px 20px 150px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.unordered-posts-container{
+    list-style-type: none;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.posts-list-item{
+    background-color: blanchedalmond;
+    min-height: 80px;
+width: 60%;
+    border-radius: 10px;
+    margin: 10px 30px 8px 100px;
+    padding: 10px 20px 10px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+img{
+    background-color: transparent;
+    mix-blend-mode: multiply;
+    width: 20%;
+}
+.caption{
+    font-size: 20px;
+    font-family:"Roboto";
+    font-weight: 400;
+    margin: 5px 5px 5px 5px;
+}
+.date{
+    margin: 15px 5px 5px 5px;
+    font-weight: 600;
+    color: blue;
+}
+.caption-date-container{
+    margin-left: 20px;
+}
+.input-element{
+    border: none;
+    width: 200px;
+}
+.posts-form-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.text-area-element{
+    border: none;
+    outline: none;
+    margin-left: 0px;
+    width: 20%;
+}
+.add-post-button{
+    background-color: rgb(75, 75, 248);
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}

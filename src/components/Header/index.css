@@ -1,0 +1,38 @@
+.nav-bar{
+    background-color:cadetblue;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.logo-heading{
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+.list-items-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.list-item{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+    font-family: "Roboto";
+    margin: 0px 10px 0px 10px;
+}
+.logout-button{
+    background-color: rgb(36, 36, 224);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+.link-element{
+    text-decoration: none;
+}

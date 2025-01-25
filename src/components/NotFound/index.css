@@ -1,0 +1,30 @@
+.not-found-containe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.notfoundcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.not-found{
+    font-size: 28px;
+}
+.not-found-button{
+    background-color: rgb(90, 90, 243);
+    font-weight: 600;
+    padding: 10px;
+    font-family: "Roboto";
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    align-self: center;
+    color: white;
+    margin-left: 55px;
+    text-align: center;
+}
