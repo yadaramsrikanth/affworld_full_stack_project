@@ -1,5 +1,5 @@
 import React,{useState} from "react"
-import {useNavigate} from "react-router-dom"
+import {useNavigate,Link} from "react-router-dom"
 import "./index.css"
 
 const Register =()=>{
@@ -73,7 +73,7 @@ const onClickregister=async (event)=>{
             <input value={password} type="password" placeholder="Enter Your Password...." required onChange={registeruserpassword}/>
             <button type="submit" className="register-submit-button">Register</button>
             {errorMsg!==""&&<p className="error-message">{errorMsg}</p>}
-           <p className="msg-para">Already have an account? <a className="login-link" href="/login">Login</a></p>
+           <p className="msg-para">Already have an account? <Link className="login-link" to="/login">Login</Link></p>
             </form>
             
             
